@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Employee::Employee(string& name, string& position, int ID, double salary)
+Employee::Employee(const string& name, const string& position, int ID, double salary)
     : name(name), position(position), ID(ID), salary(salary){
     cout<<"constructor called"<<endl;
 }
@@ -34,4 +34,36 @@ void Employee::display() const{
     cout<< "Name: " << name << endl;
     cout<< "ID: " << position << endl;
     cout<< "ID: " << salary << endl;
+}
+
+void Employee::setName(const string& newName){
+    name = newName;
+}
+
+string Employee::getName() const{
+    return name;
+}
+
+void Employee::setPosition (const string& newPosition){
+    position = newPosition;
+}
+
+string Employee::getPosition() const{
+    return position;
+}
+
+void Employee::setID(int newID){
+    ID = newID;
+}
+
+int Employee::getID() const{
+    return ID;
+}
+
+void Employee::setSalary(double newSalary){
+    salary = newSalary;
+}
+
+double Employee::getSalary() const{
+    return salary;
 }

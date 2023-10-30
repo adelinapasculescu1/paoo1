@@ -523,6 +523,80 @@ adelina_paoo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/build
 .PHONY : adelina_paoo/fast
 
+#=============================================================================
+# Target rules for targets named Employee
+
+# Build rule for target.
+Employee: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Employee
+.PHONY : Employee
+
+# fast build rule for target.
+Employee/fast:
+	$(MAKE) $(MAKESILENT) -f Employee/CMakeFiles/Employee.dir/build.make Employee/CMakeFiles/Employee.dir/build
+.PHONY : Employee/fast
+
+#=============================================================================
+# Target rules for targets named Manager
+
+# Build rule for target.
+Manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Manager
+.PHONY : Manager
+
+# fast build rule for target.
+Manager/fast:
+	$(MAKE) $(MAKESILENT) -f Manager/CMakeFiles/Manager.dir/build.make Manager/CMakeFiles/Manager.dir/build
+.PHONY : Manager/fast
+
+Employee/Employee.o: Employee/Employee.cpp.o
+.PHONY : Employee/Employee.o
+
+# target to build an object file
+Employee/Employee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.o
+.PHONY : Employee/Employee.cpp.o
+
+Employee/Employee.i: Employee/Employee.cpp.i
+.PHONY : Employee/Employee.i
+
+# target to preprocess a source file
+Employee/Employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.i
+.PHONY : Employee/Employee.cpp.i
+
+Employee/Employee.s: Employee/Employee.cpp.s
+.PHONY : Employee/Employee.s
+
+# target to generate assembly for a file
+Employee/Employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.s
+.PHONY : Employee/Employee.cpp.s
+
+Manager/Manager.o: Manager/Manager.cpp.o
+.PHONY : Manager/Manager.o
+
+# target to build an object file
+Manager/Manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.o
+.PHONY : Manager/Manager.cpp.o
+
+Manager/Manager.i: Manager/Manager.cpp.i
+.PHONY : Manager/Manager.i
+
+# target to preprocess a source file
+Manager/Manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.i
+.PHONY : Manager/Manager.cpp.i
+
+Manager/Manager.s: Manager/Manager.cpp.s
+.PHONY : Manager/Manager.s
+
+# target to generate assembly for a file
+Manager/Manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.s
+.PHONY : Manager/Manager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -586,7 +660,15 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... Employee"
+	@echo "... Manager"
 	@echo "... adelina_paoo"
+	@echo "... Employee/Employee.o"
+	@echo "... Employee/Employee.i"
+	@echo "... Employee/Employee.s"
+	@echo "... Manager/Manager.o"
+	@echo "... Manager/Manager.i"
+	@echo "... Manager/Manager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

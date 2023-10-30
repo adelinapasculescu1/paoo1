@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Manager::Manager(string& name, string& department, int ID, double salary)
+Manager::Manager(const string& name, const string& position, const string& department, int ID, double salary)
     : Employee(name, position, ID, salary), department(department) {
     cout<<"manager constructor called"<<endl;
 }
@@ -14,4 +14,12 @@ void Manager::display() const{
     cout<< "Position: " << position << endl;
     cout<< "Department: " << department << endl;
     cout<< "Salary: " << salary << endl;
+}
+
+void Manager::setDepartment(const string& newDepartment){
+    department = newDepartment;
+}
+
+string Manager::getDepartment() const{
+    return department;
 }

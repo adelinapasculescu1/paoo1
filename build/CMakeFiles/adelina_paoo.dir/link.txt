@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/adelina_paoo.dir/main.cpp.o -o adelina_paoo 
+/usr/bin/c++ -rdynamic CMakeFiles/adelina_paoo.dir/main.cpp.o CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.o CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.o -o adelina_paoo 

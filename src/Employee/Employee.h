@@ -6,7 +6,7 @@ using namespace std;
 
 class Employee {
     public:
-    Employee (const string& name, string& position, int ID, double salary);
+    Employee (const string& name, const string& position, int ID, double salary);
     Employee (const Employee& other);
     Employee& operator = (const Employee& other);
     virtual ~Employee();
@@ -15,8 +15,8 @@ class Employee {
     void setName(const string& name);
     string getName() const;
 
-    void setPosition(const string& name);
-    string getPosition(const string& name);
+    void setPosition(const string& position);
+    string getPosition() const;
 
     void setID(int ID);
     int getID() const;

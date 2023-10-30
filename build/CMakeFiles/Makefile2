@@ -64,10 +64,13 @@ CMAKE_BINARY_DIR = /home/adelina/Desktop/adelina_paoo/build
 
 # The main recursive "all" target.
 all: CMakeFiles/adelina_paoo.dir/all
+all: Employee/all
+all: Manager/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Employee/preinstall
+preinstall: Manager/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -100,7 +103,39 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/adelina_paoo.dir/clean
+clean: Employee/clean
+clean: Manager/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Employee
+
+# Recursive "all" directory target.
+Employee/all: Employee/CMakeFiles/Employee.dir/all
+.PHONY : Employee/all
+
+# Recursive "preinstall" directory target.
+Employee/preinstall:
+.PHONY : Employee/preinstall
+
+# Recursive "clean" directory target.
+Employee/clean: Employee/CMakeFiles/Employee.dir/clean
+.PHONY : Employee/clean
+
+#=============================================================================
+# Directory level rules for directory Manager
+
+# Recursive "all" directory target.
+Manager/all: Manager/CMakeFiles/Manager.dir/all
+.PHONY : Manager/all
+
+# Recursive "preinstall" directory target.
+Manager/preinstall:
+.PHONY : Manager/preinstall
+
+# Recursive "clean" directory target.
+Manager/clean: Manager/CMakeFiles/Manager.dir/clean
+.PHONY : Manager/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -837,12 +872,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/adelina_paoo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=1,2 "Built target adelina_paoo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=5,6,7,8 "Built target adelina_paoo"
 .PHONY : CMakeFiles/adelina_paoo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/adelina_paoo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/adelina_paoo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
 .PHONY : CMakeFiles/adelina_paoo.dir/rule
@@ -855,6 +890,58 @@ adelina_paoo: CMakeFiles/adelina_paoo.dir/rule
 CMakeFiles/adelina_paoo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/clean
 .PHONY : CMakeFiles/adelina_paoo.dir/clean
+
+#=============================================================================
+# Target rules for target Employee/CMakeFiles/Employee.dir
+
+# All Build rule for target.
+Employee/CMakeFiles/Employee.dir/all:
+	$(MAKE) $(MAKESILENT) -f Employee/CMakeFiles/Employee.dir/build.make Employee/CMakeFiles/Employee.dir/depend
+	$(MAKE) $(MAKESILENT) -f Employee/CMakeFiles/Employee.dir/build.make Employee/CMakeFiles/Employee.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=1,2 "Built target Employee"
+.PHONY : Employee/CMakeFiles/Employee.dir/all
+
+# Build rule for subdir invocation for target.
+Employee/CMakeFiles/Employee.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Employee/CMakeFiles/Employee.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
+.PHONY : Employee/CMakeFiles/Employee.dir/rule
+
+# Convenience name for target.
+Employee: Employee/CMakeFiles/Employee.dir/rule
+.PHONY : Employee
+
+# clean rule for target.
+Employee/CMakeFiles/Employee.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Employee/CMakeFiles/Employee.dir/build.make Employee/CMakeFiles/Employee.dir/clean
+.PHONY : Employee/CMakeFiles/Employee.dir/clean
+
+#=============================================================================
+# Target rules for target Manager/CMakeFiles/Manager.dir
+
+# All Build rule for target.
+Manager/CMakeFiles/Manager.dir/all: Employee/CMakeFiles/Employee.dir/all
+	$(MAKE) $(MAKESILENT) -f Manager/CMakeFiles/Manager.dir/build.make Manager/CMakeFiles/Manager.dir/depend
+	$(MAKE) $(MAKESILENT) -f Manager/CMakeFiles/Manager.dir/build.make Manager/CMakeFiles/Manager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=3,4 "Built target Manager"
+.PHONY : Manager/CMakeFiles/Manager.dir/all
+
+# Build rule for subdir invocation for target.
+Manager/CMakeFiles/Manager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Manager/CMakeFiles/Manager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
+.PHONY : Manager/CMakeFiles/Manager.dir/rule
+
+# Convenience name for target.
+Manager: Manager/CMakeFiles/Manager.dir/rule
+.PHONY : Manager
+
+# clean rule for target.
+Manager/CMakeFiles/Manager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Manager/CMakeFiles/Manager.dir/build.make Manager/CMakeFiles/Manager.dir/clean
+.PHONY : Manager/CMakeFiles/Manager.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -7,8 +7,11 @@ using namespace std;
 
 class Manager : public Employee {
     public:
-    Manager (string& name, string& department, int ID, double salary);
+    Manager (const string& name, const string& position, const string& department, int ID, double salary);
     virtual void display() const override;
+
+    void setDepartment(const string& department);
+    string getDepartment() const;
 
     protected:
     string department;
