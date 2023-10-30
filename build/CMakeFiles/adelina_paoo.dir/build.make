@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo
+CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/adelina/Desktop/adelina_paoo/build
@@ -70,18 +70,18 @@ include CMakeFiles/adelina_paoo.dir/progress.make
 include CMakeFiles/adelina_paoo.dir/flags.make
 
 CMakeFiles/adelina_paoo.dir/main.cpp.o: CMakeFiles/adelina_paoo.dir/flags.make
-CMakeFiles/adelina_paoo.dir/main.cpp.o: /home/adelina/Desktop/adelina_paoo/main.cpp
+CMakeFiles/adelina_paoo.dir/main.cpp.o: /home/adelina/Desktop/adelina_paoo/src/main.cpp
 CMakeFiles/adelina_paoo.dir/main.cpp.o: CMakeFiles/adelina_paoo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/adelina_paoo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/adelina_paoo.dir/main.cpp.o -MF CMakeFiles/adelina_paoo.dir/main.cpp.o.d -o CMakeFiles/adelina_paoo.dir/main.cpp.o -c /home/adelina/Desktop/adelina_paoo/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/adelina_paoo.dir/main.cpp.o -MF CMakeFiles/adelina_paoo.dir/main.cpp.o.d -o CMakeFiles/adelina_paoo.dir/main.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/main.cpp
 
 CMakeFiles/adelina_paoo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/adelina_paoo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adelina/Desktop/adelina_paoo/main.cpp > CMakeFiles/adelina_paoo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adelina/Desktop/adelina_paoo/src/main.cpp > CMakeFiles/adelina_paoo.dir/main.cpp.i
 
 CMakeFiles/adelina_paoo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/adelina_paoo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adelina/Desktop/adelina_paoo/main.cpp -o CMakeFiles/adelina_paoo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adelina/Desktop/adelina_paoo/src/main.cpp -o CMakeFiles/adelina_paoo.dir/main.cpp.s
 
 # Object files for target adelina_paoo
 adelina_paoo_OBJECTS = \
@@ -105,6 +105,6 @@ CMakeFiles/adelina_paoo.dir/clean:
 .PHONY : CMakeFiles/adelina_paoo.dir/clean
 
 CMakeFiles/adelina_paoo.dir/depend:
-	cd /home/adelina/Desktop/adelina_paoo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adelina/Desktop/adelina_paoo /home/adelina/Desktop/adelina_paoo /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/adelina_paoo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/adelina/Desktop/adelina_paoo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adelina/Desktop/adelina_paoo/src /home/adelina/Desktop/adelina_paoo/src /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/adelina_paoo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/adelina_paoo.dir/depend
 

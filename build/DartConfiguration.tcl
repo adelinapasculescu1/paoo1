@@ -4,7 +4,7 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/adelina/Desktop/adelina_paoo
+SourceDirectory: /home/adelina/Desktop/adelina_paoo/src
 BuildDirectory: /home/adelina/Desktop/adelina_paoo/build
 
 # Where to place the cost data store
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/adelina/Desktop/adelina_paoo"
+ConfigureCommand: "/usr/bin/cmake" "/home/adelina/Desktop/adelina_paoo/src"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

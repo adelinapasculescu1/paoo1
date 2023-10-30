@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/adelina/Desktop/adelina_paoo/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/adelina_paoo.dir/main.cpp.o -c /home/adelina/Desktop/adelina_paoo/main.cpp",
-  "file": "/home/adelina/Desktop/adelina_paoo/main.cpp",
-  "output": "CMakeFiles/adelina_paoo.dir/main.cpp.o"
-}
-]

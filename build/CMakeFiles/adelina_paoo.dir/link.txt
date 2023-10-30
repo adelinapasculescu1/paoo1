@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/adelina_paoo.dir/main.cpp.o -o adelina_paoo 
+/usr/bin/c++ -rdynamic CMakeFiles/adelina_paoo.dir/main.cpp.o -o adelina_paoo 
