@@ -2,16 +2,18 @@
 #define EMPLOYEE_H
 
 #include <string>
+#include <cstring>
+#include "../Employee/InterfaceEmployee.h"
 using namespace std;
 
 namespace EmployeeNamespace{
-    class Employee {
+    class Employee : public InterfaceEmployee{
         public:
-            Employee (const string& name, const string& position, int ID, double salary);
+            Employee (const string& name, const string& position, int ID, double salary, const char* g);
             Employee (const Employee& other);
             Employee& operator = (const Employee& other);
-            virtual ~Employee();
-            virtual void display() const;
+            ~Employee();
+            void display() const;
 
             void setName(const string& name);
             string getName() const;
@@ -25,11 +27,16 @@ namespace EmployeeNamespace{
             void setSalary(double salary);
             double getSalary() const;
 
-        protected:
+            void setGender(const char* gender);
+            const char* getGender() const;
+            Employee::Employee(Employee && other) noexcept;
+
+        private:
             string name;
             string position;
             int ID;
             double salary;
+            char* gender;
     };
 }
 #endif

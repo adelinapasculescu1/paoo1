@@ -11,11 +11,11 @@ Manager::Manager(const string& name, const string& position, const string& depar
 }
 
 void Manager::display() const{
-    cout<< "Manager ID: " << ID << endl;
-    cout<< "Name: " << name << endl;
-    cout<< "Position: " << position << endl;
+    cout<< "Manager ID: " << getID() << endl;
+    cout<< "Name: " << getName() << endl;
+    cout<< "Position: " << getPosition() << endl;
     cout<< "Department: " << department << endl;
-    cout<< "Salary: " << salary << endl;
+    cout<< "Salary: " << getSalary() << endl;
 }
 
 void Manager::setDepartment(const string& newDepartment){
