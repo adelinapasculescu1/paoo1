@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo/src
+CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/adelina/Desktop/adelina_paoo/build
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 .PHONY : CMakeFiles/ExperimentalBuild.dir/clean
 
 CMakeFiles/ExperimentalBuild.dir/depend:
-	cd /home/adelina/Desktop/adelina_paoo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adelina/Desktop/adelina_paoo/src /home/adelina/Desktop/adelina_paoo/src /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/adelina/Desktop/adelina_paoo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adelina/Desktop/adelina_paoo /home/adelina/Desktop/adelina_paoo /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ExperimentalBuild.dir/depend
 

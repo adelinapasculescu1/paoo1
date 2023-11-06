@@ -3,6 +3,8 @@
 
 using namespace std;
 
+namespace EmployeeNamespace {
+
 Employee::Employee(const string& name, const string& position, int ID, double salary)
     : name(name), position(position), ID(ID), salary(salary){
     cout<<"constructor called"<<endl;
@@ -66,4 +68,6 @@ void Employee::setSalary(double newSalary){
 
 double Employee::getSalary() const{
     return salary;
+}
+
 }

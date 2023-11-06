@@ -2,6 +2,9 @@
 #include "/home/adelina/Desktop/adelina_paoo/src/Employee/Employee.h"
 #include "/home/adelina/Desktop/adelina_paoo/src/Manager/Manager.h"
 
+using namespace EmployeeNamespace;
+using namespace ManagerNamespace;
+
 int main(int, char**){
     Employee e1 ("Nicu", "Software Developer", 123, 3000);
     Employee e2 = e1;

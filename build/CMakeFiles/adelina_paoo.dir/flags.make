@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/adelina/Desktop/adelina_paoo/build -I/home/adelina/Desktop/adelina_paoo/build/Employee -I/home/adelina/Desktop/adelina_paoo/build/Manager
+CXX_INCLUDES = -I/home/adelina/Desktop/adelina_paoo/build -I/home/adelina/Desktop/adelina_paoo/build/src/Employee -I/home/adelina/Desktop/adelina_paoo/build/src/Manager
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

@@ -4,7 +4,7 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/adelina/Desktop/adelina_paoo/src
+SourceDirectory: /home/adelina/Desktop/adelina_paoo
 BuildDirectory: /home/adelina/Desktop/adelina_paoo/build
 
 # Where to place the cost data store
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/adelina/Desktop/adelina_paoo/src"
+ConfigureCommand: "/usr/bin/cmake" "/home/adelina/Desktop/adelina_paoo"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,9 +58,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/c++

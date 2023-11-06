@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo/src
+CMAKE_SOURCE_DIR = /home/adelina/Desktop/adelina_paoo
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/adelina/Desktop/adelina_paoo/build
@@ -533,7 +533,7 @@ Employee: cmake_check_build_system
 
 # fast build rule for target.
 Employee/fast:
-	$(MAKE) $(MAKESILENT) -f Employee/CMakeFiles/Employee.dir/build.make Employee/CMakeFiles/Employee.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/Employee.dir/build.make src/Employee/CMakeFiles/Employee.dir/build
 .PHONY : Employee/fast
 
 #=============================================================================
@@ -546,80 +546,80 @@ Manager: cmake_check_build_system
 
 # fast build rule for target.
 Manager/fast:
-	$(MAKE) $(MAKESILENT) -f Manager/CMakeFiles/Manager.dir/build.make Manager/CMakeFiles/Manager.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/Manager.dir/build.make src/Manager/CMakeFiles/Manager.dir/build
 .PHONY : Manager/fast
 
-Employee/Employee.o: Employee/Employee.cpp.o
-.PHONY : Employee/Employee.o
+src/Employee/Employee.o: src/Employee/Employee.cpp.o
+.PHONY : src/Employee/Employee.o
 
 # target to build an object file
-Employee/Employee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.o
-.PHONY : Employee/Employee.cpp.o
+src/Employee/Employee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o
+.PHONY : src/Employee/Employee.cpp.o
 
-Employee/Employee.i: Employee/Employee.cpp.i
-.PHONY : Employee/Employee.i
+src/Employee/Employee.i: src/Employee/Employee.cpp.i
+.PHONY : src/Employee/Employee.i
 
 # target to preprocess a source file
-Employee/Employee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.i
-.PHONY : Employee/Employee.cpp.i
+src/Employee/Employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.i
+.PHONY : src/Employee/Employee.cpp.i
 
-Employee/Employee.s: Employee/Employee.cpp.s
-.PHONY : Employee/Employee.s
+src/Employee/Employee.s: src/Employee/Employee.cpp.s
+.PHONY : src/Employee/Employee.s
 
 # target to generate assembly for a file
-Employee/Employee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Employee/Employee.cpp.s
-.PHONY : Employee/Employee.cpp.s
+src/Employee/Employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.s
+.PHONY : src/Employee/Employee.cpp.s
 
-Manager/Manager.o: Manager/Manager.cpp.o
-.PHONY : Manager/Manager.o
+src/Manager/Manager.o: src/Manager/Manager.cpp.o
+.PHONY : src/Manager/Manager.o
 
 # target to build an object file
-Manager/Manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.o
-.PHONY : Manager/Manager.cpp.o
+src/Manager/Manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o
+.PHONY : src/Manager/Manager.cpp.o
 
-Manager/Manager.i: Manager/Manager.cpp.i
-.PHONY : Manager/Manager.i
+src/Manager/Manager.i: src/Manager/Manager.cpp.i
+.PHONY : src/Manager/Manager.i
 
 # target to preprocess a source file
-Manager/Manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.i
-.PHONY : Manager/Manager.cpp.i
+src/Manager/Manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.i
+.PHONY : src/Manager/Manager.cpp.i
 
-Manager/Manager.s: Manager/Manager.cpp.s
-.PHONY : Manager/Manager.s
+src/Manager/Manager.s: src/Manager/Manager.cpp.s
+.PHONY : src/Manager/Manager.s
 
 # target to generate assembly for a file
-Manager/Manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/Manager/Manager.cpp.s
-.PHONY : Manager/Manager.cpp.s
+src/Manager/Manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.s
+.PHONY : src/Manager/Manager.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -663,15 +663,15 @@ help:
 	@echo "... Employee"
 	@echo "... Manager"
 	@echo "... adelina_paoo"
-	@echo "... Employee/Employee.o"
-	@echo "... Employee/Employee.i"
-	@echo "... Employee/Employee.s"
-	@echo "... Manager/Manager.o"
-	@echo "... Manager/Manager.i"
-	@echo "... Manager/Manager.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Employee/Employee.o"
+	@echo "... src/Employee/Employee.i"
+	@echo "... src/Employee/Employee.s"
+	@echo "... src/Manager/Manager.o"
+	@echo "... src/Manager/Manager.i"
+	@echo "... src/Manager/Manager.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

@@ -7,10 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/adelina/Desktop/adelina_paoo/CMakeLists.txt"
   "CMakeFiles/3.27.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.4/CMakeSystem.cmake"
-  "/home/adelina/Desktop/adelina_paoo/src/CMakeLists.txt"
   "/home/adelina/Desktop/adelina_paoo/src/Employee/CMakeLists.txt"
   "/home/adelina/Desktop/adelina_paoo/src/Manager/CMakeLists.txt"
   "/usr/share/cmake-3.27/Modules/CMakeCInformation.cmake"
@@ -52,8 +52,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CPackConfig.cmake"
   "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Employee/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Manager/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Employee/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Manager/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -87,6 +87,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/adelina_paoo.dir/DependInfo.cmake"
-  "Employee/CMakeFiles/Employee.dir/DependInfo.cmake"
-  "Manager/CMakeFiles/Manager.dir/DependInfo.cmake"
+  "src/Employee/CMakeFiles/Employee.dir/DependInfo.cmake"
+  "src/Manager/CMakeFiles/Manager.dir/DependInfo.cmake"
   )

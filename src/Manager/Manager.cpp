@@ -2,7 +2,9 @@
 #include <iostream>
 
 using namespace std;
+using namespace EmployeeNamespace;
 
+namespace ManagerNamespace {
 Manager::Manager(const string& name, const string& position, const string& department, int ID, double salary)
     : Employee(name, position, ID, salary), department(department) {
     cout<<"manager constructor called"<<endl;
@@ -22,4 +24,5 @@ void Manager::setDepartment(const string& newDepartment){
 
 string Manager::getDepartment() const{
     return department;
+}    
 }
