@@ -32,8 +32,8 @@ namespace EmployeeNamespace{
             Employee::Employee(Employee && other) noexcept;
 
         private:
-            string name;
-            string position;
+            string* name;
+            string* position;
             int ID;
             double salary;
             char* gender;

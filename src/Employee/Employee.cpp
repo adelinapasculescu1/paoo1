@@ -7,7 +7,9 @@ using namespace std;
 namespace EmployeeNamespace {
 
 Employee::Employee(const string& name, const string& position, int ID, double salary, const char* g)
-    : name(name), position(position), ID(ID), salary(salary){
+    : ID(ID), salary(salary){
+        this->name = new string(name);
+        this->position = new string(position);
         gender = new char[strlen(g) + 1];
                 strcpy(gender, g);
     cout<<"constructor called"<<endl;
@@ -37,6 +39,9 @@ Employee& Employee::operator = (const Employee& other){
 }
 
 Employee::~Employee() {
+    delete name;
+    delete position;
+    delete[] gender;
     cout << "deconstructor called" << endl;
 }
 
@@ -48,19 +53,19 @@ void Employee::display() const{
 }
 
 void Employee::setName(const string& newName){
-    name = newName;
+    *name = newName;
 }
 
 string Employee::getName() const{
-    return name;
+    return *name;
 }
 
 void Employee::setPosition (const string& newPosition){
-    position = newPosition;
+    *position = newPosition;
 }
 
 string Employee::getPosition() const{
-    return position;
+    return *position;
 }
 
 void Employee::setID(int newID){
@@ -89,7 +94,7 @@ const char* Employee::getGender() const{
 }
 
 Employee::Employee(Employee && other) noexcept :
-    name(""), position(""), ID(0), salary(0.0), gender(nullptr) {
+    name(nullptr), position(nullptr), ID(0), salary(0.0), gender(nullptr) {
     cout<<"move constructor called"<<endl;
     *this = std::move(other);
     }
