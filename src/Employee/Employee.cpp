@@ -6,19 +6,28 @@ using namespace std;
 
 namespace EmployeeNamespace {
 
-Employee::Employee(const string& name, const string& position, int ID, double salary, const char* g)
+Employee::Employee(const char* n, const char* p, int ID, double salary, const char* g)
     : ID(ID), salary(salary){
-        this->name = new string(name);
-        this->position = new string(position);
+        name = new char[strlen(n) + 1];
+                strcpy(name, n);
+        position = new char[strlen(p) + 1];
+                strcpy(position, p);
         gender = new char[strlen(g) + 1];
                 strcpy(gender, g);
     cout<<"constructor called"<<endl;
 }
 
 Employee::Employee(const Employee&other)
-    : name(other.name), position(other.position), ID(other.ID), salary(other.salary){
+    : position(other.position), ID(other.ID), salary(other.salary){
+        name = new char[strlen(other.name) + 1];
+        strcpy(name, other.name);
+
+        position = new char[strlen(other.position) + 1];
+        strcpy(position, other.position);
+
         gender = new char[strlen(other.gender) + 1];
         strcpy(gender, other.gender);
+
         cout<<"copy constructor called"<<endl;
 }
 
@@ -27,11 +36,17 @@ Employee& Employee::operator = (const Employee& other){
     if(this == &other){
         return *this;
     }
-    
-    name = other.name;
-    position = other.position;
+    delete[] name;
+    name = new char[strlen(other.name) + 1];
+    strcpy(name, other.name);
+
+    delete[] position;
+    position = new char[strlen(other.position) + 1];
+    strcpy(position, other.position);
+
     ID = other.ID;
     salary = other.salary;
+
     delete[] gender;
     gender = new char[strlen(other.gender) + 1];
     strcpy(gender, other.gender);
@@ -48,24 +63,27 @@ Employee::~Employee() {
 void Employee::display() const{
     cout<< "ID: " << ID << endl;
     cout<< "Name: " << name << endl;
-    cout<< "ID: " << position << endl;
-    cout<< "ID: " << salary << endl;
+    cout<< "Position: " << position << endl;
+    cout<< "salary: " << salary << endl;
+    cout<< "gender: " << gender << endl;
 }
 
-void Employee::setName(const string& newName){
-    *name = newName;
+void Employee::setName(const char* newName){
+    name = new char[strlen(newName) + 1];
+        strcpy(name, newName);
 }
 
-string Employee::getName() const{
-    return *name;
+const char* Employee::getName() const{
+    return name;
 }
 
-void Employee::setPosition (const string& newPosition){
-    *position = newPosition;
+void Employee::setPosition (const char* newPosition){
+    position = new char[strlen(newPosition) + 1];
+        strcpy(position, newPosition);
 }
 
-string Employee::getPosition() const{
-    return *position;
+const char* Employee::getPosition() const{
+    return position;
 }
 
 void Employee::setID(int newID){
@@ -93,9 +111,19 @@ const char* Employee::getGender() const{
     return gender;
 }
 
-Employee::Employee(Employee && other) noexcept :
+Employee::Employee(Employee && other) :
     name(nullptr), position(nullptr), ID(0), salary(0.0), gender(nullptr) {
-    cout<<"move constructor called"<<endl;
     *this = std::move(other);
+    cout<<"move constructor called"<<endl;
     }
+
+template <typename T>
+void Employee::setAttribute(T Employee::* member, const T& value) {
+    this->*member = value;
+}
+
+template <typename T>
+const T& Employee::getAttribute(T Employee::* member) const {
+    return this->*member;
+}
 }

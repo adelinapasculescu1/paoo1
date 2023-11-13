@@ -524,78 +524,56 @@ adelina_paoo/fast:
 .PHONY : adelina_paoo/fast
 
 #=============================================================================
-# Target rules for targets named Employee
+# Target rules for targets named MainLibrary
 
 # Build rule for target.
-Employee: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Employee
-.PHONY : Employee
+MainLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainLibrary
+.PHONY : MainLibrary
 
 # fast build rule for target.
-Employee/fast:
-	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/Employee.dir/build.make src/Employee/CMakeFiles/Employee.dir/build
-.PHONY : Employee/fast
+MainLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/build
+.PHONY : MainLibrary/fast
 
 #=============================================================================
-# Target rules for targets named Manager
+# Target rules for targets named EmployeeLibrary
 
 # Build rule for target.
-Manager: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Manager
-.PHONY : Manager
+EmployeeLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EmployeeLibrary
+.PHONY : EmployeeLibrary
 
 # fast build rule for target.
-Manager/fast:
-	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/Manager.dir/build.make src/Manager/CMakeFiles/Manager.dir/build
-.PHONY : Manager/fast
+EmployeeLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/EmployeeLibrary.dir/build.make src/Employee/CMakeFiles/EmployeeLibrary.dir/build
+.PHONY : EmployeeLibrary/fast
 
-src/Employee/Employee.o: src/Employee/Employee.cpp.o
-.PHONY : src/Employee/Employee.o
+#=============================================================================
+# Target rules for targets named CalculatorLibrary
 
-# target to build an object file
-src/Employee/Employee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o
-.PHONY : src/Employee/Employee.cpp.o
+# Build rule for target.
+CalculatorLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CalculatorLibrary
+.PHONY : CalculatorLibrary
 
-src/Employee/Employee.i: src/Employee/Employee.cpp.i
-.PHONY : src/Employee/Employee.i
+# fast build rule for target.
+CalculatorLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Calculator/CMakeFiles/CalculatorLibrary.dir/build.make src/Calculator/CMakeFiles/CalculatorLibrary.dir/build
+.PHONY : CalculatorLibrary/fast
 
-# target to preprocess a source file
-src/Employee/Employee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.i
-.PHONY : src/Employee/Employee.cpp.i
+#=============================================================================
+# Target rules for targets named ManagerLibrary
 
-src/Employee/Employee.s: src/Employee/Employee.cpp.s
-.PHONY : src/Employee/Employee.s
+# Build rule for target.
+ManagerLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ManagerLibrary
+.PHONY : ManagerLibrary
 
-# target to generate assembly for a file
-src/Employee/Employee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.s
-.PHONY : src/Employee/Employee.cpp.s
-
-src/Manager/Manager.o: src/Manager/Manager.cpp.o
-.PHONY : src/Manager/Manager.o
-
-# target to build an object file
-src/Manager/Manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o
-.PHONY : src/Manager/Manager.cpp.o
-
-src/Manager/Manager.i: src/Manager/Manager.cpp.i
-.PHONY : src/Manager/Manager.i
-
-# target to preprocess a source file
-src/Manager/Manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.i
-.PHONY : src/Manager/Manager.cpp.i
-
-src/Manager/Manager.s: src/Manager/Manager.cpp.s
-.PHONY : src/Manager/Manager.s
-
-# target to generate assembly for a file
-src/Manager/Manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.s
-.PHONY : src/Manager/Manager.cpp.s
+# fast build rule for target.
+ManagerLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/ManagerLibrary.dir/build.make src/Manager/CMakeFiles/ManagerLibrary.dir/build
+.PHONY : ManagerLibrary/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -660,15 +638,11 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... Employee"
-	@echo "... Manager"
+	@echo "... CalculatorLibrary"
+	@echo "... EmployeeLibrary"
+	@echo "... MainLibrary"
+	@echo "... ManagerLibrary"
 	@echo "... adelina_paoo"
-	@echo "... src/Employee/Employee.o"
-	@echo "... src/Employee/Employee.i"
-	@echo "... src/Employee/Employee.s"
-	@echo "... src/Manager/Manager.o"
-	@echo "... src/Manager/Manager.i"
-	@echo "... src/Manager/Manager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

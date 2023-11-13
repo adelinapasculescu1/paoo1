@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o"
-  "CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o.d"
-  "CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o"
-  "CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o.d"
   "CMakeFiles/adelina_paoo.dir/src/main.cpp.o"
   "CMakeFiles/adelina_paoo.dir/src/main.cpp.o.d"
   "adelina_paoo"

@@ -83,49 +83,21 @@ CMakeFiles/adelina_paoo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/adelina_paoo.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adelina/Desktop/adelina_paoo/src/main.cpp -o CMakeFiles/adelina_paoo.dir/src/main.cpp.s
 
-CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o: CMakeFiles/adelina_paoo.dir/flags.make
-CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o: /home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp
-CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o: CMakeFiles/adelina_paoo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o -MF CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o.d -o CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp
-
-CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp > CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.i
-
-CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp -o CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.s
-
-CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o: CMakeFiles/adelina_paoo.dir/flags.make
-CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o: /home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp
-CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o: CMakeFiles/adelina_paoo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o -MF CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o.d -o CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp
-
-CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp > CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.i
-
-CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp -o CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.s
-
 # Object files for target adelina_paoo
 adelina_paoo_OBJECTS = \
-"CMakeFiles/adelina_paoo.dir/src/main.cpp.o" \
-"CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o" \
-"CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o"
+"CMakeFiles/adelina_paoo.dir/src/main.cpp.o"
 
 # External object files for target adelina_paoo
 adelina_paoo_EXTERNAL_OBJECTS =
 
 adelina_paoo: CMakeFiles/adelina_paoo.dir/src/main.cpp.o
-adelina_paoo: CMakeFiles/adelina_paoo.dir/src/Employee/Employee.cpp.o
-adelina_paoo: CMakeFiles/adelina_paoo.dir/src/Manager/Manager.cpp.o
 adelina_paoo: CMakeFiles/adelina_paoo.dir/build.make
+adelina_paoo: src/libMainLibrary.a
+adelina_paoo: src/Employee/libEmployeeLibrary.a
+adelina_paoo: src/Calculator/libCalculatorLibrary.a
+adelina_paoo: src/Manager/libManagerLibrary.a
 adelina_paoo: CMakeFiles/adelina_paoo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable adelina_paoo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable adelina_paoo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/adelina_paoo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

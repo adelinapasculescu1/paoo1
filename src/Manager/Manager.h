@@ -9,13 +9,13 @@ using namespace EmployeeNamespace;
 namespace ManagerNamespace{
 class Manager : public Employee {
     public:
-        Manager (const string& name, const string& position, const string& department, int ID, double salary);
-        virtual void display() const; //override;
+        Manager (const char* name, const char* position, const string& department, int ID, double salary, const char* gender);
+        virtual void display() const; 
 
         void setDepartment(const string& department);
         string getDepartment() const;
 
-    private:
+    protected:
         string department;
 };
 }

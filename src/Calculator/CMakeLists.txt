@@ -1,0 +1,2 @@
+add_library(CalculatorLibrary Calculator.cpp Calculator.h)
+target_include_directories(CalculatorLibrary PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

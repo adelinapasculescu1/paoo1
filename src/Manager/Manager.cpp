@@ -5,8 +5,8 @@ using namespace std;
 using namespace EmployeeNamespace;
 
 namespace ManagerNamespace {
-Manager::Manager(const string& name, const string& position, const string& department, int ID, double salary)
-    : Employee(name, position, ID, salary), department(department) {
+Manager::Manager(const char* name, const char* position, const string& department, int ID, double salary, const char* gender)
+    : Employee(name, position, ID, salary, gender), department(department) {
     cout<<"manager constructor called"<<endl;
 }
 

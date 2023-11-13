@@ -7,11 +7,11 @@ using namespace std;
 //namespace IEmployeeNamespace {
     class InterfaceEmployee {
         virtual void display() const = 0;
-        virtual void setName(const string& name) = 0;
-        virtual string getName() const = 0;
+        virtual void setName(const char* name) = 0;
+        virtual const char* getName() const = 0;
 
-        virtual void setPosition(const string& position) = 0;
-        virtual string getPosition() const = 0;
+        virtual void setPosition(const char* position) = 0;
+        virtual const char* getPosition() const = 0;
 
         virtual void setID(int ID) = 0;
         virtual int getID() const = 0;

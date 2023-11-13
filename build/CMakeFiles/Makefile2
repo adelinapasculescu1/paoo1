@@ -64,13 +64,11 @@ CMAKE_BINARY_DIR = /home/adelina/Desktop/adelina_paoo/build
 
 # The main recursive "all" target.
 all: CMakeFiles/adelina_paoo.dir/all
-all: src/Employee/all
-all: src/Manager/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/Employee/preinstall
-preinstall: src/Manager/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -103,15 +101,52 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/adelina_paoo.dir/clean
-clean: src/Employee/clean
-clean: src/Manager/clean
+clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/MainLibrary.dir/all
+src/all: src/Employee/all
+src/all: src/Calculator/all
+src/all: src/Manager/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall: src/Employee/preinstall
+src/preinstall: src/Calculator/preinstall
+src/preinstall: src/Manager/preinstall
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/MainLibrary.dir/clean
+src/clean: src/Employee/clean
+src/clean: src/Calculator/clean
+src/clean: src/Manager/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/Calculator
+
+# Recursive "all" directory target.
+src/Calculator/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+.PHONY : src/Calculator/all
+
+# Recursive "preinstall" directory target.
+src/Calculator/preinstall:
+.PHONY : src/Calculator/preinstall
+
+# Recursive "clean" directory target.
+src/Calculator/clean: src/Calculator/CMakeFiles/CalculatorLibrary.dir/clean
+.PHONY : src/Calculator/clean
 
 #=============================================================================
 # Directory level rules for directory src/Employee
 
 # Recursive "all" directory target.
-src/Employee/all: src/Employee/CMakeFiles/Employee.dir/all
+src/Employee/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
 .PHONY : src/Employee/all
 
 # Recursive "preinstall" directory target.
@@ -119,14 +154,14 @@ src/Employee/preinstall:
 .PHONY : src/Employee/preinstall
 
 # Recursive "clean" directory target.
-src/Employee/clean: src/Employee/CMakeFiles/Employee.dir/clean
+src/Employee/clean: src/Employee/CMakeFiles/EmployeeLibrary.dir/clean
 .PHONY : src/Employee/clean
 
 #=============================================================================
 # Directory level rules for directory src/Manager
 
 # Recursive "all" directory target.
-src/Manager/all: src/Manager/CMakeFiles/Manager.dir/all
+src/Manager/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
 .PHONY : src/Manager/all
 
 # Recursive "preinstall" directory target.
@@ -134,7 +169,7 @@ src/Manager/preinstall:
 .PHONY : src/Manager/preinstall
 
 # Recursive "clean" directory target.
-src/Manager/clean: src/Manager/CMakeFiles/Manager.dir/clean
+src/Manager/clean: src/Manager/CMakeFiles/ManagerLibrary.dir/clean
 .PHONY : src/Manager/clean
 
 #=============================================================================
@@ -869,15 +904,18 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/adelina_paoo.dir
 
 # All Build rule for target.
-CMakeFiles/adelina_paoo.dir/all:
+CMakeFiles/adelina_paoo.dir/all: src/CMakeFiles/MainLibrary.dir/all
+CMakeFiles/adelina_paoo.dir/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
+CMakeFiles/adelina_paoo.dir/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+CMakeFiles/adelina_paoo.dir/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adelina_paoo.dir/build.make CMakeFiles/adelina_paoo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=5,6,7,8 "Built target adelina_paoo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=9,10 "Built target adelina_paoo"
 .PHONY : CMakeFiles/adelina_paoo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/adelina_paoo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/adelina_paoo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
 .PHONY : CMakeFiles/adelina_paoo.dir/rule
@@ -892,56 +930,110 @@ CMakeFiles/adelina_paoo.dir/clean:
 .PHONY : CMakeFiles/adelina_paoo.dir/clean
 
 #=============================================================================
-# Target rules for target src/Employee/CMakeFiles/Employee.dir
+# Target rules for target src/CMakeFiles/MainLibrary.dir
 
 # All Build rule for target.
-src/Employee/CMakeFiles/Employee.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/Employee.dir/build.make src/Employee/CMakeFiles/Employee.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/Employee.dir/build.make src/Employee/CMakeFiles/Employee.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=1,2 "Built target Employee"
-.PHONY : src/Employee/CMakeFiles/Employee.dir/all
+src/CMakeFiles/MainLibrary.dir/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
+src/CMakeFiles/MainLibrary.dir/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+src/CMakeFiles/MainLibrary.dir/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=5,6 "Built target MainLibrary"
+.PHONY : src/CMakeFiles/MainLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-src/Employee/CMakeFiles/Employee.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Employee/CMakeFiles/Employee.dir/all
+src/CMakeFiles/MainLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MainLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
-.PHONY : src/Employee/CMakeFiles/Employee.dir/rule
+.PHONY : src/CMakeFiles/MainLibrary.dir/rule
 
 # Convenience name for target.
-Employee: src/Employee/CMakeFiles/Employee.dir/rule
-.PHONY : Employee
+MainLibrary: src/CMakeFiles/MainLibrary.dir/rule
+.PHONY : MainLibrary
 
 # clean rule for target.
-src/Employee/CMakeFiles/Employee.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/Employee.dir/build.make src/Employee/CMakeFiles/Employee.dir/clean
-.PHONY : src/Employee/CMakeFiles/Employee.dir/clean
+src/CMakeFiles/MainLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/clean
+.PHONY : src/CMakeFiles/MainLibrary.dir/clean
 
 #=============================================================================
-# Target rules for target src/Manager/CMakeFiles/Manager.dir
+# Target rules for target src/Employee/CMakeFiles/EmployeeLibrary.dir
 
 # All Build rule for target.
-src/Manager/CMakeFiles/Manager.dir/all: src/Employee/CMakeFiles/Employee.dir/all
-	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/Manager.dir/build.make src/Manager/CMakeFiles/Manager.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/Manager.dir/build.make src/Manager/CMakeFiles/Manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=3,4 "Built target Manager"
-.PHONY : src/Manager/CMakeFiles/Manager.dir/all
+src/Employee/CMakeFiles/EmployeeLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/EmployeeLibrary.dir/build.make src/Employee/CMakeFiles/EmployeeLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/EmployeeLibrary.dir/build.make src/Employee/CMakeFiles/EmployeeLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=3,4 "Built target EmployeeLibrary"
+.PHONY : src/Employee/CMakeFiles/EmployeeLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-src/Manager/CMakeFiles/Manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Manager/CMakeFiles/Manager.dir/all
+src/Employee/CMakeFiles/EmployeeLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Employee/CMakeFiles/EmployeeLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
-.PHONY : src/Manager/CMakeFiles/Manager.dir/rule
+.PHONY : src/Employee/CMakeFiles/EmployeeLibrary.dir/rule
 
 # Convenience name for target.
-Manager: src/Manager/CMakeFiles/Manager.dir/rule
-.PHONY : Manager
+EmployeeLibrary: src/Employee/CMakeFiles/EmployeeLibrary.dir/rule
+.PHONY : EmployeeLibrary
 
 # clean rule for target.
-src/Manager/CMakeFiles/Manager.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/Manager.dir/build.make src/Manager/CMakeFiles/Manager.dir/clean
-.PHONY : src/Manager/CMakeFiles/Manager.dir/clean
+src/Employee/CMakeFiles/EmployeeLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Employee/CMakeFiles/EmployeeLibrary.dir/build.make src/Employee/CMakeFiles/EmployeeLibrary.dir/clean
+.PHONY : src/Employee/CMakeFiles/EmployeeLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Calculator/CMakeFiles/CalculatorLibrary.dir
+
+# All Build rule for target.
+src/Calculator/CMakeFiles/CalculatorLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Calculator/CMakeFiles/CalculatorLibrary.dir/build.make src/Calculator/CMakeFiles/CalculatorLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Calculator/CMakeFiles/CalculatorLibrary.dir/build.make src/Calculator/CMakeFiles/CalculatorLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=1,2 "Built target CalculatorLibrary"
+.PHONY : src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Calculator/CMakeFiles/CalculatorLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
+.PHONY : src/Calculator/CMakeFiles/CalculatorLibrary.dir/rule
+
+# Convenience name for target.
+CalculatorLibrary: src/Calculator/CMakeFiles/CalculatorLibrary.dir/rule
+.PHONY : CalculatorLibrary
+
+# clean rule for target.
+src/Calculator/CMakeFiles/CalculatorLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Calculator/CMakeFiles/CalculatorLibrary.dir/build.make src/Calculator/CMakeFiles/CalculatorLibrary.dir/clean
+.PHONY : src/Calculator/CMakeFiles/CalculatorLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Manager/CMakeFiles/ManagerLibrary.dir
+
+# All Build rule for target.
+src/Manager/CMakeFiles/ManagerLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/ManagerLibrary.dir/build.make src/Manager/CMakeFiles/ManagerLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/ManagerLibrary.dir/build.make src/Manager/CMakeFiles/ManagerLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=7,8 "Built target ManagerLibrary"
+.PHONY : src/Manager/CMakeFiles/ManagerLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Manager/CMakeFiles/ManagerLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Manager/CMakeFiles/ManagerLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
+.PHONY : src/Manager/CMakeFiles/ManagerLibrary.dir/rule
+
+# Convenience name for target.
+ManagerLibrary: src/Manager/CMakeFiles/ManagerLibrary.dir/rule
+.PHONY : ManagerLibrary
+
+# clean rule for target.
+src/Manager/CMakeFiles/ManagerLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Manager/CMakeFiles/ManagerLibrary.dir/build.make src/Manager/CMakeFiles/ManagerLibrary.dir/clean
+.PHONY : src/Manager/CMakeFiles/ManagerLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
