@@ -1,5 +1,6 @@
 #include "Calculator.h"
 #include "../Employee/Employee.h"
+#include "../Manager/Manager.h"
 
 template <typename T>
 void Calculator<T>::calculateSalary(const T& role) const {
@@ -8,3 +9,4 @@ void Calculator<T>::calculateSalary(const T& role) const {
 
 // Explicit instantiation for the types you plan to use
 template class Calculator<EmployeeNamespace::Employee>;  // Replace YourRoleClass with your actual class name
+template class Calculator<ManagerNamespace::Manager>;

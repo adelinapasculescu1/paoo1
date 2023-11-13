@@ -524,17 +524,17 @@ adelina_paoo/fast:
 .PHONY : adelina_paoo/fast
 
 #=============================================================================
-# Target rules for targets named MainLibrary
+# Target rules for targets named MainLib
 
 # Build rule for target.
-MainLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainLibrary
-.PHONY : MainLibrary
+MainLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainLib
+.PHONY : MainLib
 
 # fast build rule for target.
-MainLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/build
-.PHONY : MainLibrary/fast
+MainLib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLib.dir/build.make src/CMakeFiles/MainLib.dir/build
+.PHONY : MainLib/fast
 
 #=============================================================================
 # Target rules for targets named EmployeeLibrary
@@ -640,7 +640,7 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... CalculatorLibrary"
 	@echo "... EmployeeLibrary"
-	@echo "... MainLibrary"
+	@echo "... MainLib"
 	@echo "... ManagerLibrary"
 	@echo "... adelina_paoo"
 	@echo "... src/main.o"

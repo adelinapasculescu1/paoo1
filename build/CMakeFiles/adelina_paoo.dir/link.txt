@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/adelina_paoo.dir/src/main.cpp.o -o adelina_paoo  src/libMainLibrary.a src/Employee/libEmployeeLibrary.a src/Calculator/libCalculatorLibrary.a src/Manager/libManagerLibrary.a 
+/usr/bin/c++ -g -rdynamic CMakeFiles/adelina_paoo.dir/src/main.cpp.o -o adelina_paoo  src/libMainLib.a src/Employee/libEmployeeLibrary.a src/Calculator/libCalculatorLibrary.a src/Manager/libManagerLibrary.a 

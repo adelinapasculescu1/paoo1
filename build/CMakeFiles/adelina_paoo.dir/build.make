@@ -92,7 +92,7 @@ adelina_paoo_EXTERNAL_OBJECTS =
 
 adelina_paoo: CMakeFiles/adelina_paoo.dir/src/main.cpp.o
 adelina_paoo: CMakeFiles/adelina_paoo.dir/build.make
-adelina_paoo: src/libMainLibrary.a
+adelina_paoo: src/libMainLib.a
 adelina_paoo: src/Employee/libEmployeeLibrary.a
 adelina_paoo: src/Calculator/libCalculatorLibrary.a
 adelina_paoo: src/Manager/libManagerLibrary.a

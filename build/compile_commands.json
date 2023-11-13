@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/adelina/Desktop/adelina_paoo/build",
+  "command": "/usr/bin/c++  -I/home/adelina/Desktop/adelina_paoo/build -I/home/adelina/Desktop/adelina_paoo/build/Employee -I/home/adelina/Desktop/adelina_paoo/build/Calculator -I/home/adelina/Desktop/adelina_paoo/build/Manager -I/home/adelina/Desktop/adelina_paoo/src/Employee -I/home/adelina/Desktop/adelina_paoo/src/Calculator -I/home/adelina/Desktop/adelina_paoo/src/Manager -g -o CMakeFiles/adelina_paoo.dir/src/main.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/main.cpp",
+  "file": "/home/adelina/Desktop/adelina_paoo/src/main.cpp",
+  "output": "CMakeFiles/adelina_paoo.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/adelina/Desktop/adelina_paoo/build/src",
+  "command": "/usr/bin/c++  -I/home/adelina/Desktop/adelina_paoo/build -I/home/adelina/Desktop/adelina_paoo/build/Employee -I/home/adelina/Desktop/adelina_paoo/build/Calculator -I/home/adelina/Desktop/adelina_paoo/build/Manager -I/home/adelina/Desktop/adelina_paoo/src/Employee -I/home/adelina/Desktop/adelina_paoo/src/Calculator -I/home/adelina/Desktop/adelina_paoo/src/Manager -g -o CMakeFiles/MainLib.dir/main.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/main.cpp",
+  "file": "/home/adelina/Desktop/adelina_paoo/src/main.cpp",
+  "output": "src/CMakeFiles/MainLib.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adelina/Desktop/adelina_paoo/build/src/Employee",
+  "command": "/usr/bin/c++  -I/home/adelina/Desktop/adelina_paoo/src/Employee -g -o CMakeFiles/EmployeeLibrary.dir/Employee.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp",
+  "file": "/home/adelina/Desktop/adelina_paoo/src/Employee/Employee.cpp",
+  "output": "src/Employee/CMakeFiles/EmployeeLibrary.dir/Employee.cpp.o"
+},
+{
+  "directory": "/home/adelina/Desktop/adelina_paoo/build/src/Calculator",
+  "command": "/usr/bin/c++  -I/home/adelina/Desktop/adelina_paoo/src/Calculator -g -o CMakeFiles/CalculatorLibrary.dir/Calculator.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/Calculator/Calculator.cpp",
+  "file": "/home/adelina/Desktop/adelina_paoo/src/Calculator/Calculator.cpp",
+  "output": "src/Calculator/CMakeFiles/CalculatorLibrary.dir/Calculator.cpp.o"
+},
+{
+  "directory": "/home/adelina/Desktop/adelina_paoo/build/src/Manager",
+  "command": "/usr/bin/c++  -I/home/adelina/Desktop/adelina_paoo/src/Manager -g -o CMakeFiles/ManagerLibrary.dir/Manager.cpp.o -c /home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp",
+  "file": "/home/adelina/Desktop/adelina_paoo/src/Manager/Manager.cpp",
+  "output": "src/Manager/CMakeFiles/ManagerLibrary.dir/Manager.cpp.o"
+}
+]

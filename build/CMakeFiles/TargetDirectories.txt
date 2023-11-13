@@ -32,7 +32,7 @@
 /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/test.dir
 /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/edit_cache.dir
 /home/adelina/Desktop/adelina_paoo/build/CMakeFiles/rebuild_cache.dir
-/home/adelina/Desktop/adelina_paoo/build/src/CMakeFiles/MainLibrary.dir
+/home/adelina/Desktop/adelina_paoo/build/src/CMakeFiles/MainLib.dir
 /home/adelina/Desktop/adelina_paoo/build/src/CMakeFiles/package.dir
 /home/adelina/Desktop/adelina_paoo/build/src/CMakeFiles/package_source.dir
 /home/adelina/Desktop/adelina_paoo/build/src/CMakeFiles/test.dir

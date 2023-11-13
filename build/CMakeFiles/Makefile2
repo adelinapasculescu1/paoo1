@@ -108,7 +108,7 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/MainLibrary.dir/all
+src/all: src/CMakeFiles/MainLib.dir/all
 src/all: src/Employee/all
 src/all: src/Calculator/all
 src/all: src/Manager/all
@@ -121,7 +121,7 @@ src/preinstall: src/Manager/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/MainLibrary.dir/clean
+src/clean: src/CMakeFiles/MainLib.dir/clean
 src/clean: src/Employee/clean
 src/clean: src/Calculator/clean
 src/clean: src/Manager/clean
@@ -904,7 +904,7 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/adelina_paoo.dir
 
 # All Build rule for target.
-CMakeFiles/adelina_paoo.dir/all: src/CMakeFiles/MainLibrary.dir/all
+CMakeFiles/adelina_paoo.dir/all: src/CMakeFiles/MainLib.dir/all
 CMakeFiles/adelina_paoo.dir/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
 CMakeFiles/adelina_paoo.dir/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
 CMakeFiles/adelina_paoo.dir/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
@@ -930,32 +930,32 @@ CMakeFiles/adelina_paoo.dir/clean:
 .PHONY : CMakeFiles/adelina_paoo.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/MainLibrary.dir
+# Target rules for target src/CMakeFiles/MainLib.dir
 
 # All Build rule for target.
-src/CMakeFiles/MainLibrary.dir/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
-src/CMakeFiles/MainLibrary.dir/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
-src/CMakeFiles/MainLibrary.dir/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=5,6 "Built target MainLibrary"
-.PHONY : src/CMakeFiles/MainLibrary.dir/all
+src/CMakeFiles/MainLib.dir/all: src/Employee/CMakeFiles/EmployeeLibrary.dir/all
+src/CMakeFiles/MainLib.dir/all: src/Calculator/CMakeFiles/CalculatorLibrary.dir/all
+src/CMakeFiles/MainLib.dir/all: src/Manager/CMakeFiles/ManagerLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLib.dir/build.make src/CMakeFiles/MainLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLib.dir/build.make src/CMakeFiles/MainLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adelina/Desktop/adelina_paoo/build/CMakeFiles --progress-num=5,6 "Built target MainLib"
+.PHONY : src/CMakeFiles/MainLib.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/MainLibrary.dir/rule: cmake_check_build_system
+src/CMakeFiles/MainLib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MainLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MainLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adelina/Desktop/adelina_paoo/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/MainLibrary.dir/rule
+.PHONY : src/CMakeFiles/MainLib.dir/rule
 
 # Convenience name for target.
-MainLibrary: src/CMakeFiles/MainLibrary.dir/rule
-.PHONY : MainLibrary
+MainLib: src/CMakeFiles/MainLib.dir/rule
+.PHONY : MainLib
 
 # clean rule for target.
-src/CMakeFiles/MainLibrary.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLibrary.dir/build.make src/CMakeFiles/MainLibrary.dir/clean
-.PHONY : src/CMakeFiles/MainLibrary.dir/clean
+src/CMakeFiles/MainLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MainLib.dir/build.make src/CMakeFiles/MainLib.dir/clean
+.PHONY : src/CMakeFiles/MainLib.dir/clean
 
 #=============================================================================
 # Target rules for target src/Employee/CMakeFiles/EmployeeLibrary.dir
